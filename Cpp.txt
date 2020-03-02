@@ -1,0 +1,1317 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int a,b,c;
+   cout<<"Enter a and b values";
+   cin>>a>>b;
+   c=a+b;
+   cout<<"Addition is"<<c<<"\n";
+
+return 0;	
+}
+==================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=30,b=35,c;
+	c=a+b;
+	cout<<"addition is "<<c;
+	return 0;
+}
+=========================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c,d;
+	cout<<"enter a and b values";
+	cin>>a>>b;
+	c=a+b;
+	d=a-b;
+	cout<<"addition is"<<c<<"\n";
+	cout<<"substration is"<<d;
+	return 0;}
+===============================
+#include<iostream>
+using namespace std;
+int main()
+{
+	float s1,s2,s3,avg,total;
+	cout<<"enter three subjects marks to find total and avg marks";
+	cin>>s1>>s2>>s3;
+	total=s1+s2+s3;
+	avg=(s1+s2+s3)/3;
+	cout<<"total marks is"<<total<<"\n";
+	cout<<"avg marks is"<<avg;
+		return 0;
+	}
+==========================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	float salary,b1,b2,b3,total,savings;
+	cout<<"enter salary";
+	cin>>salary;
+	cout<<"enter three bills to find total bill amount and saving amount";
+	cin>>b1>>b2>>b3;
+	total=b1+b2+b3;
+	 savings=salary-total;
+	cout<<"total bill amount is"<<total<<"\n";
+	cout<<"savings amount is"<<savings;
+		return 0;
+	}
+===========================================================	
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	float salary,tax;
+	cout<<"enter salary";
+	cin>>salary;
+	tax=(salary*7)/100;
+	cout<< "tax amount"<<tax;
+	return 0;
+}	
+   
+=====================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int bs,gs,hra,da,total;
+	cout<<"enter basic salary to find gross salary";
+	cin>>bs;
+	hra=(bs*90)/100;
+	da=(bs*40)/100;
+	total=hra+da+bs;
+	cout<<"gross salary is"<<total;
+	return 0;
+}
+=================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+
+	int marks;
+	cout<<"enter marks";
+	cin>>marks;
+	if(marks>=50)
+	{
+		cout<<"pass";
+	}
+	else
+	{
+		cout<<"fail";
+	}
+	return 0;
+}
+======================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num;
+	cout<<"enter num";
+	cin>>num;
+	if(num==0)
+	{
+		cout<<"zero";
+	}
+	else if (num>=0)
+	{
+		cout<<"postive";
+	}
+	else
+	{
+		cout<<"negtive";
+		
+	}
+	return 0;
+}
+==========================================
+ #include<iostream>
+using namespace std;
+int main()
+{
+ int num;
+ cout<<"Enter number ";
+ cin>>num;
+ if(num%2==0)
+ {
+ 	cout<<num<<" is even number";
+ }
+ else
+ {
+ 	cout<<num<<" is odd number";
+ }
+return 0;	
+}
+==================================================================
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1,num2;
+	cout<<"enter num1 and num2 is big num";
+	cin>>num1>>num2;
+	if(num1>num2)
+	{
+		cout<<"num1 is big num";
+	}
+	else
+	{
+		cout<<"num2 is big num";
+	}
+	
+	return 0;
+}
+======================
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int wno,wd;
+	cout<<"enter wno to find wd";
+	cin>>wno;
+	if(wno==1)
+	{
+		cout<<"sunday";
+	}
+	else if ( wno==2)
+	{
+		cout<<"monday";
+	}
+		else if ( wno==3)
+	{
+		cout<<"tuesday";
+	}
+		else if ( wno==4)
+	{
+		cout<<"wednesday";
+	}
+		else if ( wno==5)
+	{
+		cout<<"thursday";
+	}
+	else if(wno==6)
+	{cout<<"friday";
+	}
+	else if(wno==7)
+	{
+		cout<<"saturday";
+		
+	}
+	else
+	{
+		cout<<"invaid day";
+	}
+	return 0;
+}
+==================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	float bs,gs,hra,da;
+	cout<< "enter basic salary";
+	cin>>bs;
+	if(bs<=10000)
+	{
+		hra=(bs*70)/100;
+		da=(bs*30)/100;
+	}
+	else if(bs<=20000)
+	{
+		hra=(bs*80)/100;
+		da=(bs*40)/100;		
+	}
+	else
+	{
+		hra=(bs*90)/100;
+		da=(bs*50)/100;
+	}
+	gs=bs+hra+da;
+	cout<<"hra is"<<hra<<"\n";
+	cout<<"da is "<<da<<"\n";
+	cout<<"gross salary"<<gs;
+return 0;	
+}
+===================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int units;
+	float bill;
+	cout<< "enter  no of units";
+	cin>>units;
+	if(units<=50)
+	{
+		bill=units*50;
+	}else if(units<=150)
+	{
+		 bill=(50*0.50)+(units-50)*0.75;
+	}
+	else if(units<=250)
+	{
+		bill=(50*0.50)+(100*0.75)+(units-150)*1.20;
+	}
+	else
+	{
+			bill=(50*0.50)+(100*0.75)+(100*1.20)+(units-250)*1.50;
+	}
+	bill=bill+(bill*20)/100;
+	cout<<"bill is "<<bill;
+return 0;	
+}
+=================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks;
+	cout<< "enter  marks";
+	cin>>marks;
+	if(marks>=0 && marks<=100)
+	{
+		cout<<"is valid marks"<<marks;
+	}
+	else
+	{
+		cout<<"is not valid marks"<<marks;
+	}
+
+return 0;	
+}
+============================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int s1,s2,s3;
+	float avg;
+	cout<<"enter 3 subjects marks";
+	cin>>s1>>s2>>s3;
+	if(s1>=50 && s2>=50 &&s3>=50)
+	{ 
+	avg=(s1+s2+s3)/3;
+	cout<< "avg marks "<<avg<<"\n";
+	if(avg>=85)
+	{
+		cout<<"A grade";
+	}
+	else if(avg>=75)
+	{
+		cout<<"B grade";
+	}
+	else if(avg>=65)
+	{
+		cout<<"C grade";
+	}
+	else 
+	{
+		cout<<"D grade";
+	}
+	}
+	else
+	{
+		cout<<" Fail";
+	}
+	
+return 0;
+}
+======================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int amt,total,a,b,c;
+	cout<<"enter amt";
+	cin>>amt;
+	if (amt%100==0)
+	{
+		if(amt>=2000)
+		{  
+		a=amt/2000;
+		amt=amt-(a*2000);
+			cout<<"2000 : "<<a<<"\n";
+		}
+		if(amt>=500)
+		{
+			b=amt/500;
+			amt=amt-(b*500);
+			cout<<"500 : "<<b<<"\n";
+			
+		}
+		if (amt>=100)
+		{
+			c=amt/100;
+			cout<<"100 : "<<c;
+		}
+		
+	}
+	else
+		{
+			cout<<"not valid";
+		}
+return 0;
+}
+===================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1;
+	while(i<=10)
+	{
+		cout<<"hai"<<"\t";
+		i++;
+	}
+	return 0;
+}
+============================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1;
+	
+	while(i<=10)
+	{
+		cout<<"i"<<"\t";
+		i++;
+	}
+	return 0;
+}
+===============================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1,n;
+	cout<<"enter n value ";
+	cin>>n;
+	while(i<=n)
+	{
+		cout<<"i"<<"\t";
+		i++;
+	}
+	return 0;
+}
+===================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1,n,sum=0;
+	cout<<"enter is n value ";
+	cin>>n;
+	while(i<=n)
+		{
+			sum=sum+i;
+		i++;
+	}
+	cout<<"sum is"<<sum;
+	return 0;
+}
+==============================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1,n,esum=0,osum=0;
+	cout<<"enter is n value ";
+	cin>>n;
+	while(i<=n)
+		{
+			if(i%2==0)
+		{
+			esum=esum+i;
+		}
+		else
+		{
+			osum=osum+i;
+			
+		}
+		i++;
+	}
+	cout<<"sum of even no "<<esum<<"\n";
+	cout<<"sum of odd no "<<osum;
+	return 0;
+}
+==========================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1,n,esum=0;
+	cout<<"enter is n value ";
+	cin>>n;
+	while(i<=n)
+		{
+			if(i%2==0)
+		{
+			esum=esum+i;
+		}		
+		i++;
+	}
+	cout<<"sum of even no  "<<esum;
+
+	return 0;
+}
+=========================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1,n,osum=0;
+	cout<<"enter is n value ";
+	cin>>n;
+	while(i<=n)
+		{
+			if(i%2!=0)
+		{
+			osum=osum+i;
+		}		
+		i++;
+	}
+	cout<<"sum of odd no  "<<osum;
+
+	return 0;
+}
+=================================
+   
+DIGITS
+-------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,digits=0;
+	cout<<"enter  num to find no of  find digits ";
+	cin>>num;
+	while(num!=0)
+		{
+			num=num/10;
+			digits++;
+	
+	}
+	cout<<"digits is  "<<digits;
+
+	return 0;
+}
+========================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem,sum=0;
+	cout<<"enter  num to find  sum of digits ";
+	cin>>num;
+	while(num!=0)
+		{
+			rem=num%10;
+			sum=sum+rem;
+			num=num/10;
+			
+	
+	}
+	cout<<"sum of digits  "<<sum;
+
+	return 0;
+}
+=================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem;
+	cout<<"enter  num  ";
+	cin>>num;
+	while(num!=0)
+		{
+			rem=num%10;
+			cout<<"\t "<<rem;
+			num=num/10;
+			
+	
+	}
+
+	return 0;
+}
+==================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem,esum=0,osum=0;
+	cout<<"enter  num  ";
+	cin>>num;
+	while(num!=0)
+		{
+			rem=num%10;
+			if(num%2==0)
+			{
+				esum=esum+rem;
+			}
+			else{
+				osum=osum+rem;
+			}
+						
+			num=num/10;
+			
+	
+	}
+	cout<<"sum of even "<<esum<<"\t";
+	cout<<"sum of odd  "<<osum;
+
+	return 0;
+}
+====================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem,ecount=0,ocount=0;
+	cout<<"enter  num  ";
+	cin>>num;
+	while(num!=0)
+		{
+			rem=num%10;
+			if(num%2==0)
+			{
+				ecount++;
+			}
+			else{
+				ocount++;
+			}
+						
+			num=num/10;
+			
+	
+	}
+	cout<<" even digits "<<ecount<<"\n";
+	cout<<"odd digits "<<ocount;
+
+	return 0;
+}
+==========================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem,rev=0;
+	cout<<"enter  num  ";
+	cin>>num;
+	while(num!=0)
+		{
+			rem=num%10;
+			rev=rev*10+rem;	
+			num=num/10;
+			
+	
+	}
+	cout<<" reverse no is  "<<rev<<"\n";
+
+	return 0;
+}
+===================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem,rev=0,temp;
+	cout<<"enter  num  ";
+	cin>>num;
+	num=temp;
+	while(num!=0)
+		{
+			rem=num%10;
+			rev=rev*10+rem;	
+			num=num/10;
+			}
+			if(rev==temp)
+			{ 
+			cout<<"is palindrom";
+			}
+			else
+			{
+				cout<<"is not palindrom";
+		}
+
+	return 0;
+}
+=========================================
+#include<iostream>
+using namespace std;
+int main()
+{
+int num,fact=1;
+cout<<"enter no";
+cin>>num;
+while(num>=1)
+{
+	fact=fact*num;
+	num--;
+	cout<<" factorial is "<<fact;
+}
+	return 0;
+}
+=========================================================
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem,sum=0,fact=1,temp;
+	cout<<"enter  num  ";
+	cin>>num;
+    temp=num;
+	while(num!=0)
+	{
+		 rem=num%10;
+		 while(rem>=1)
+		 {
+		 	fact=fact*rem;
+		 	rem--;
+		 }
+		 sum=sum+fact;
+		 fact=1;
+		 num=num/10;
+	}
+
+	if(temp==sum)
+	{
+		cout<<" is strong  no "<<temp;
+	}
+	else
+	{
+		cout<<"is not strong no "<<temp;
+	}
+	return 0;
+}
+============================================
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int num,rem,sum=0,digits=0,temp;
+	cout<<"enter  num  ";
+	cin>>num;
+	temp=num;
+	while(num!=0)
+	{
+		 num=num/10;   
+		 digits++;
+	}
+	num=temp;
+	while(num!=0)
+	{
+		rem=num%10;
+		sum=sum+pow(rem,digits);  
+		num=num/10; 
+	}
+	if(sum==temp)
+	{
+		cout<<" is armstrong no "<<temp;
+	}
+	else
+	{
+		cout<<"is not armstrong no "<<temp;
+	}
+	return 0;
+}
+===================================================
+for loop:-
+-----------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i;
+	for(i=1;i<=5;i++)
+	cout<<" i ";
+	return 0;
+}
+================================================			
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n;
+	cout<<"enter n value";
+	cin>>n;
+	
+	for(i=1;i<=n;i++)
+	cout<<" i ";
+	return 0;
+}
+============================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n,sum=0;
+	cout<<"enter n value";
+	cin>>n;
+	
+	for(i=1;i<=n;i++)
+	{
+		sum=sum+i;
+	}
+	cout<<" sum is "<<sum;
+	return 0;
+}
+============================
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n,esum=0,osum=0;
+	cout<<"enter n value";
+	cin>>n;
+	
+	for(i=1;i<=n;i++)
+	{
+		if(i%2==0)
+		{
+			esum=esum+i;
+		}
+		else
+		{
+			osum=osum+i;
+		}
+	}
+	cout<<" sum of even num "<<esum;
+	cout<<" sum of odd num"<<osum;
+	return 0;
+}
+==================================
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,i;
+	cout<<"enter number to print table";
+	cin>>num;
+	for(i=1;i<=10;i++)
+	{
+		cout<<num<<"*"<<i<<"="<<num*i<<"\n";
+	}
+return 0;
+}
+=====================================================================================
+
+
+Array problems:-
+---------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks[10]={23,45,46,5,78,89,90};
+    cout<<marks[3]<<"\n";
+    cout<<marks[8];
+return 0;
+}
+===============================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i, marks[10]={23,45,46,5,78,89,90};
+	for(i=1;i<6;i++)
+	{
+	
+    cout<<marks[i]<<"\t";
+
+}
+return 0;
+}
+============================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i, marks[10]={23,45,46,5,78,89,90};
+	for(i=1;i<7;i++)
+	{
+	if(marks[i]%2==0)
+		{
+		
+    cout<<marks[i]<<"\t";
+}}
+return 0;
+
+}
+====================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n;
+	cout<<"enter n value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter n value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];
+			}
+			for(i=0;i<n;i++)
+			{
+				cout<<"\t"<<marks[i];
+			}
+
+}
+================================================================================
+evencount,oddcount:
+--------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n ,evencount=0,oddcount=0;
+	cout<<"enter n value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter n value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];
+		if(marks[i]%2==0){
+			evencount++;
+		}
+		else{oddcount++;
+		}
+			}
+			cout<<"no of even no"<<evencount<<"\n";
+			cout<<"no of odd no"<<oddcount;		
+}
+======================================================================
+even ,odd:
+------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n ,even=0,odd=0;
+	cout<<"enter n value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter n value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];
+		if(marks[i]%2==0)
+		{ 
+	
+		even=even+marks[i];
+		}
+		else
+		{
+		odd=odd+marks[i];
+		}
+			}
+			cout<<"sum of even no "<<even<<"\n";
+			cout<<"sum of odd no "<<odd;
+			
+		
+}
+===================================
+even,odd,evencount,oddcount:
+----------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n ,even=0,odd=0,evencount=0,oddcount=0;
+	cout<<"enter n value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter n value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];
+		if(marks[i]%2==0)
+		{ 
+	evencount++;
+		even=even+marks[i];
+		}
+		else
+		{
+			oddcount++;
+		odd=odd+marks[i];
+		}
+			}
+			
+		cout<<"no  of even no "<<evencount<<"\n";	
+			cout<<"sum of even no "<<even<<"\n";
+				cout<<"no  of odd no "<<oddcount<<"\n";
+			cout<<"sum of odd no "<<odd;		
+}
+==============================================================================================
+sum,avg,no of elements
+--------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n ,sum=0,avg=0;
+	cout<<"enter n value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter n value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];
+	sum=sum+marks[i];
+		}
+		avg=sum/n;
+		
+			cout<<"sum  is"<<sum<<"\n";
+				cout<<"avg is "<<avg<<"\n";
+			cout<<"no  of elemets "<<n;
+			
+		
+}
+=====================================================================================================
+sum,avg,min,max:
+------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,n ,sum=0,avg=0,min=0,max=0;
+	cout<<"enter n value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter n value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];	
+	sum=sum+marks[i];
+	if(max<marks[i])
+{
+	max=marks[i];
+	
+}
+		}
+		avg=sum/n;
+		min=marks[0];
+		
+		for(i=1;i<n;i++)
+		{
+		if(min>marks[i])
+		{
+			min=marks[i];
+			}	
+		}
+		cout<<" max "<<max<<"\n";
+		cout<<" min "<<min<<"\n";
+		cout<<" sum "<<sum<<"\n";
+		cout<<" avg is "<<avg;
+
+}
+==========================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,i,j,temp;
+	cout<<"enter n  value";
+	cin>>n;
+	int marks[n];
+	cout<<"enter"<<n<<"value";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];
+		
+	}
+	for(i=0;i<n;i++)
+	{
+		for(j=i+1;j<n;j++){
+		
+		if(marks[i]<marks[j])
+		{
+			temp=marks[i];
+			marks[i]=marks[j];
+			marks[j]=temp;
+		}
+		}
+	}
+	for(i=0;i<n;i++)
+{
+	cout<<marks[i]<<"\t";
+}
+	return  0;
+}
+=============================================================
+max and smax
+------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,marks[50],n,max=0,smax=0;
+	cout<<"Enter n value";
+	cin>>n;
+	cout<<"Enter "<<n<<" values";
+	for(i=0;i<n;i++)
+	{
+		cin>>marks[i];      //  45 96 74 15 85 36 44
+		if(max<marks[i])
+		{
+			smax=max;        //85
+			max=marks[i];    //96
+		}
+		else if(smax<marks[i])
+		{
+			smax=marks[i];    
+		}
+    }
+    
+    cout<<"max value is : "<<max<<endl;
+    cout<<"second max value is : "<<s8max<<endl;
+    
+	
+	return 0;
+}
+======================================================================
+min and smin
+-----------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,marks[50],n,min=0,smin=0;
+	cout<<"Enter n value";
+	cin>>n;
+	cout<<"Enter "<<n<<" values";
+	cin>>min;
+	for(i=1;i<n;i++)
+	{
+		cin>>marks[i];      //  45 96 74 15 85 36 44
+	if(min>marks[i])
+	{
+	    smin=min;
+		min=marks[i];
+	 }      
+	 else if(smin>marks[i])
+	 {
+	 	smin=marks[i];
+	 	
+	 }
+	}
+    
+    cout<<"min value is : "<<min<<endl;
+    cout<<"second min value is : "<<smin<<endl;
+    
+	
+	return 0;
+}
+=====================================================================
+add element at index
+--------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,index,value;
+	int arr[6]={74,85,96,72,35,15};
+	cout<<"enter index";
+	cin>>index;
+	cout<<"Enter new value";
+	cin>>value;
+	arr[index]=value;
+	
+	for(i=0;i<6;i++)
+	{
+		cout<<arr[i]<<endl;
+	}
+}
+=====================================================
+
+#include<iostream>
+using namespace std;
+void prime(int start,int end)
+{
+int i,fac=0,pc=0;
+while(start<=end)
+{
+	for(i=1;i<=start/2;i++)
+	{
+		if(start%i==0)
+		{
+			fac++;
+		}
+	}
+	if(fac==1)
+	{ 
+	pc++;
+	cout<<start<<"\t";
+	}
+start++;
+fac=0;	
+}
+cout<<"\n"<<pc;
+}
+
+void perfect(int start,int end)
+{
+int i,sum=0,num;
+while(start<=end)
+{
+for(i=1;i<=start/2;i++)
+{
+if(start%i==0)
+{
+	sum=sum+i;	
+}	
+if(sum==start)
+{
+	cout<<"perfect no is  :"<<start;
+}
+}
+start++;
+}	
+}
+
+int main()
+{ 
+prime(1,100);
+	
+perfect(1,100);
+
+return  0;	
+}
+==========================================
+#include<iostream>
+using namespace std;
+void rev(int num)
+{	int rem,rev=0,temp;
+temp=num;
+	while(num!=0)
+	{
+		rem=num%10;
+		rev=rev*10+rem;
+		num=num/10;
+ }
+	if(rev==temp)
+	{
+	cout<<" palindrome : "<<temp;
+   }
+	else 
+	{ cout<<"not palindrom"<<temp;
+		}	
+}
+
+int main()
+{int num;
+	
+	cout<<"enter no ";
+	cin>>num;
+	rev(num);
+	}
+================================================================
+#include<iostream>
+using namespace std;
+void rev(int num)
+{	int rem,rev=0;
+	while(num!=0)
+	{
+		rem=num%10;
+		rev=rev*10+rem;
+		num=num/10;
+ }
+	cout<<" rev : "<<rev;
+}
+
+int main()
+{int num;
+	
+	cout<<"enter no ";
+	cin>>num;
+	rev(num);
+	}
+======================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
