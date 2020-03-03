@@ -1,0 +1,138 @@
+#include<iostream>
+using namespace std;
+int allprime()
+{
+ int i,start,stop,digits=0,pc;
+ while(start<=stop)
+ {
+ 	for(i=0;i<=start/2;i++)
+ 	{
+ 		if(start%i==0)
+ 		{
+ 			digits++;
+		 }
+	 }
+	 }
+	 if(digits==1)
+	 {
+	 pc++;
+}
+	 return pc;	
+}
+int main()
+{
+	int i,n,count=0,start,stop;
+	allprime(int start,int end);
+	
+}
+==============================================
+#include<iostream>
+using namespace std;
+void perfect(int  start ,int end)
+{
+	int i,num,sum=0;
+	
+	while(start<=end)
+	for(i=0;i<=num/2;i++)
+	{
+		if(num%i==0)
+		{
+			sum=sum+i;		
+		}	
+	}
+if(sum==num)
+{
+	cout<<"perfect no is ";
+}
+else
+{
+	cout<<" is not perfect no ";
+	}
+	start++;
+	sum=0;	
+}
+
+
+
+int main()
+{
+	int num;
+	cout <<" enter no to check";
+	cin>>num;
+	perfect(1,100);
+	cout<<"is perfect num";
+	return 0;	
+	 
+=========================================
+#include<iostream>
+#include<math.h>
+using namespace std;
+void strongnumber(int start,int stop)
+{
+	int i,fact=1,temp=0,sum=0,rem;
+	while(start<=stop)
+	{
+		temp=start;
+		while(start!=0)
+		{
+		rem=start%10;
+		for(i=1;i<=rem;i++)
+		{
+		fact=fact*i;
+	
+		}
+		sum=sum+fact;
+		fact=1;
+		start=start/10;
+	}
+start=temp;
+if(start==sum)
+{
+	cout<<start<<"\t";
+}
+sum=0;
+start++;
+}
+}
+int main()
+{
+	strongnumber(100,1000000);
+	return 0;
+}
+==========================================
+#include<iostream>
+#include<math.h>
+using namespace std;
+void strongnumber(int start,int stop)
+{
+	int i,fact=1,temp=0,sum=0,rem;
+	while(start<=stop)
+	{
+		temp=start;
+		while(start!=0)
+		{
+		rem=start%10;
+		for(i=1;i<=rem;i++)
+		{
+		fact=fact*i;
+	
+		}
+		sum=sum+fact;
+		fact=1;
+		start=start/10;
+	}
+start=temp;
+if(start==sum)
+{
+	cout<<start<<"\t";
+}
+sum=0;
+start++;
+}
+}
+int main()
+{
+	strongnumber(100,1000000);
+	return 0;
+}
+=========================================

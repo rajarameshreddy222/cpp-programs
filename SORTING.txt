@@ -1,0 +1,130 @@
+#include<iostream>
+using namespace std;
+int i,j,temp,n,arr[10]={2,3,1,5,4,6};
+void bubble()
+{
+for(i=0;i<5;i++)
+{
+	for(j=0;j<5;j++)
+	{
+		if(arr[j]>arr[j+1])
+		{
+			temp=arr[j];
+			arr[j]=arr[j+1];
+			arr[j+1]=temp;
+		}
+	}
+	
+}}
+void selection()
+{int min,l;
+	for(i=0;i<5;i++)
+	{
+		min=arr[i];
+		l=i;
+		for(j=i+1;j<5;j++)
+		{
+			if(min>arr[j])
+			{
+				min=arr[j];
+				l=j;
+			}
+			}
+				swap(arr[i],arr[l]);
+	}
+	
+}
+void insertion()
+{ int key;
+	for(i=1;i<5;i++)
+	{
+		key=arr[i];
+		j=i-1;
+		while(j>=0 && key<arr[j] )
+		{
+			arr[j+1]=arr[j];
+			j=j-1;
+		}
+		arr[j+1]=key;
+	}
+}
+int partition(int arr[10],int start,int end)
+{int i,j=start,pivot=arr[end];
+	for(i=start;i<end;i++)
+	{
+	if(pivot>=arr[i])
+	{
+		swap(arr[i],arr[j]);
+		j++;
+	}	
+	}
+	swap(arr[j],arr[end]);
+	return j;
+}
+void quicksort(int arr[10],int start,int end)
+{
+	if(start<end)
+	{
+	int index=partition(arr,start,end);
+	quicksort(arr,start,index-1);
+	quicksort(arr,index+1,end);
+}
+}
+
+
+void display()
+{
+for(i=0;i<6;i++)
+	{
+		cout<<arr[i]<<"\t";
+	}}
+	
+
+
+void sorting()
+{
+	int opt;
+	cout<<"===sorting===="<<endl;
+	cout<<"1. bubble"<<endl;
+	cout<<"2. selection "<<endl;
+	cout<<"3.insertion "<<endl;
+	cout<<"4.quick "<<endl;
+	
+   do
+   {
+   	cout<<" enter 1-4"<<endl;
+   	cin>>opt;
+   	if(opt==1)
+   	{
+   		bubble();
+   		display();
+	   }
+	   if(opt==2)
+   	{
+   		selection();
+   		display();
+	   }
+	      if(opt==3)
+   	{
+   		insertion();
+   		display();
+	   }
+	         if(opt==4)
+   	{
+   	quicksort(arr,0,5);
+   		display();
+	   }
+   }
+   while(opt!=0);
+	
+}
+
+
+int main()
+{
+ sorting();
+  return 0;
+}
+
+
+
